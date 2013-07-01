@@ -7,7 +7,7 @@ res = Net::HTTP.get_response(uri)
 text = Net::HTTP.get(uri)
 found_times = 0
 
-text.scan(/[tT][hH][eE]/) { |match| 
+text.scan(/\s[tT][hH][eE]\s/) { |match| 
 	found_times += 1  
 }
 
