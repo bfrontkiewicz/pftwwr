@@ -1,0 +1,1 @@
+web: bundle exec rackup reverse_str_app_config.ru -p $PORT
